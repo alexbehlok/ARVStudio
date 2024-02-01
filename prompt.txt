@@ -1,0 +1,56 @@
+I am creating an application that will allow me to perform "Associative Remote Viewing" sessions as a single individual.
+
+The program will take on the role of the tasker, randomly assigning images from an image pool to binary outcomes from a chosen event. The program will then guide the viewer through the session, providing a random image from the pool and asking the viewer to describe the image as it relates to the chosen event.
+
+Events will always be binary outcome events, such as sporting events or over/under bets. 
+
+Here is a basic description of the logic flow:
+
+1. Event is chosen from a pre-set list of upcoming events with binary outcomes
+2. Two random images are chosen from the image pool and randomly assigned one of the two outcomes.
+  - This should result in 4 possible outcomes: 
+    - Image 1: Outcome 1
+    - Image 1: Outcome 2
+    - Image 2: Outcome 1
+    - Image 2: Outcome 2  
+
+3. The program will keep this association secret and only provide the user with a randomly generated set of coordinates in the format "xxxxxxxx", an 8 digit number.
+4. User will receive target coordinate and perform their remote viewing session.
+5. Session is judged and rated against the two images for similarity/correspondence in description:image.
+6. If a clear correspondence exists, a prediction is made and the user is informed of the prediction.
+7. The prediction is reported to the user
+8. The event is observed for feedback
+9. Results are recorded and stored for analysis
+
+
+It will do this by progressing through a series of windows, each with a specific purpose:
+* Setup
+  - Event Number entered
+  -TRN Type (6 or 8 digit Target Result Number)
+  - Photo Target Pair Mode:
+    Individual photo-target pair for every different viewer even if viewing the same event. (if multiple viewers)
+->PROCEED
+
+* Tasking
+  -Enter the event information:
+    - Event Date: [mm/dd/yy]
+    - Event Time: hh:mm
+    - Event Timezone: (EST default, CST, PST)
+    - Event Type: (Entered by user, IE "NFL Over/Under")
+    - Event Pair: (ex: [Ravens]  / [Steelers])
+    - Outcomes: (ex: [Over] / [Under])
+    - Full Line Info: (Text description of betting line or event details)
+  - Save Event
+  - Create wording/cue phrasing for the tasking
+  - Generate TRN numbers (different for each viewer) randomly. Each viewer should have their image associations done seperately with no image overlap
+  - Set Transcript/Session due date
+  - Preview view of task email
+  - Send Task Email
+    
+* Judging
+  - Start Judging 
+  - Each viewer has their sessions compared to the outcome images 
+
+
+
+
