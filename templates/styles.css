@@ -1,0 +1,105 @@
+/* styles.css */
+
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  color: #333;
+}
+
+.arv-studio {
+  max-width: 600px;
+  margin: 20px auto;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background: #fff;
+}
+
+.header {
+  background-color: #007bff;
+  color: #ffffff;
+  padding: 10px 15px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-weight: bold;
+}
+
+.title {
+  font-size: 1.2em;
+}
+
+.content {
+  padding: 20px;
+}
+
+.form label {
+  display: block;
+  margin-top: 10px;
+}
+
+.form input[type="text"] {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box; /* Ensures padding does not affect width */
+}
+
+.buttons {
+  margin-top: 20px;
+  text-align: right;
+}
+
+.buttons button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  margin-left: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s ease;
+}
+
+#save {
+  background-color: #28a745;
+  color: #fff;
+}
+
+#cancel {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+/* Hover effects for buttons */
+#save:hover {
+  background-color: #218838;
+}
+
+#cancel:hover {
+  background-color: #c82333;
+}
+
+/* Responsive design */
+@media (max-width: 767px) {
+  .arv-studio {
+      margin: 10px;
+  }
+
+  .header .title {
+      font-size: 1em;
+  }
+
+  .buttons button {
+      width: 100%;
+      margin-top: 10px;
+      margin-left: 0;
+  }
+}
